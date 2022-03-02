@@ -1,6 +1,5 @@
 import "./contact.css";
 import { useContext } from "react";
-import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
 import { useRef, useState } from "react";
