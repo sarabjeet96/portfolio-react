@@ -3,7 +3,7 @@ import { useContext } from "react";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
 import { useRef, useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { ThemeContext } from "../../context";
 
 const Contact = () => {
