@@ -65,12 +65,16 @@
         width: 100%;
     }
     .a-card {
-        height: 30vh;
+        height: 50vh;
     }
     .a-card.bg {
         display: none;
     }
     .a-right {
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
   }

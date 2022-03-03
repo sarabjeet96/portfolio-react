@@ -1,0 +1,28 @@
+.c-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.c-info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    font-weight: 300;
+  }
+  
+  .c-icon {
+    width: 35px;
+    height: 35px;   
+  }
+
+  @media screen  and (max-width: 480px) {
+    .c-info-item {
+        margin: 20px 0px;
+        width: 100%;
+      }
+
+  }

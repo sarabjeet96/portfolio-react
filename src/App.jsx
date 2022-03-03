@@ -3,8 +3,8 @@ import Intro from "./components/intro/intro";
 import About from "./components/about/About";
 import ProjectList from "./components/projectList/ProjectList";
 import Contact from "./components/contact/Contact";
-import Toggle from "./components/toggle/Toggle";
 import { ThemeContext } from "./context.js";
+import Toggle from './components/toggle/Toggle'
 
 const App = () => {
   const theme = useContext(ThemeContext);
@@ -16,11 +16,11 @@ const App = () => {
         color: darkMode && "white",
       }}
     >
-      <Toggle />
       <Intro />
       <About />
       <ProjectList />
       <Contact />
+      <Toggle />
     </div>
   );
 };
