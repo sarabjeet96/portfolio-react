@@ -71,16 +71,6 @@ textarea {
   padding-left: 10px;
 }
 
-button {
-  border: none;
-  padding: 15px;
-  background-color: #59b256;
-  color: white;
-  font-weight: 500;
-  cursor: pointer;
-  border-radius: 12px;
-}
-
 @media screen  and (max-width: 480px) {
   .c-wrapper {
     flex-direction: column;

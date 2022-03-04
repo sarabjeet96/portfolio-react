@@ -17,11 +17,12 @@
 }
 
 .p-circle {
-    width: 6px;
-    height: 6px;
+    width: 7.5px;
+    height: 7.5px;
     margin: 3px;
     border-radius: 50%;
-    background-color: white;
+    margin-left: 5px;
+    background-color: #ff6666;
 }
 
 .p-img {

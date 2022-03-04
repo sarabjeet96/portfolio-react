@@ -20,7 +20,42 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    margin-top: 25px;
 }
+
+.btn {
+    border: 2.5px solid #59b256;
+    padding: 15px;
+    margin-top: 20px;
+    color: #59b256;
+    background-color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.btn:hover {
+    background-color: #59b256;
+    color: white;
+}
+
+.btn-dark {
+    border: transparent;
+    padding: 14px;
+    margin-top: 20px;
+    color: white;
+    background-color: #5902EC;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.btn-dark:hover {
+    border: 2px solid #5902EC;
+    background-color: white;
+    color: #5902EC;
+}
+
 @media screen  and (max-width: 480px) {
     .pl {
       padding: 10px;

@@ -10,6 +10,12 @@ const Contact = () => {
   const formRef = useRef();
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+    let button;
+  if(darkMode) {
+    button = <button className="btn-dark">Submit</button>;
+  }else {
+    button = <button className="btn">Submit</button>;  
+  }
   const [done, setDone] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -74,7 +80,7 @@ const Contact = () => {
               placeholder="Message"
               name="message"
             />
-            <button>Submit</button>
+            {button}
             {done && "Thank you..."}
           </form>
         </div>
