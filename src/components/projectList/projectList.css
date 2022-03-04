@@ -20,18 +20,18 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .btn {
     border: 2.5px solid #59b256;
-    padding: 15px;
+    padding: 10px;
     margin-top: 20px;
     color: #59b256;
     background-color: white;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 .btn:hover {
@@ -41,13 +41,13 @@
 
 .btn-dark {
     border: transparent;
-    padding: 14px;
+    padding: 12px;
     margin-top: 20px;
     color: white;
     background-color: #5902EC;
     font-weight: 600;
     cursor: pointer;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 .btn-dark:hover {
@@ -65,5 +65,12 @@
     }
     .pl-desc {
         display: none;
+    }
+    .pl-list {
+        justify-content: center;
+        align-items: center;
+    }
+    .btn, .btn-dark {
+        margin-top: 10px;
     }
   }

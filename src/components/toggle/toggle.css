@@ -2,8 +2,8 @@
     width: 55px;
     height: 30px;
     border-radius: 20px;
-    border: 1pz solid #999;
-    background-color: white;
+    border: .8px solid #fff;
+    background-color: #fff;
     position: fixed;
     top: 10px;
     right: 10px;
@@ -14,19 +14,26 @@
 }
 
 .t-icon{
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
 }
 
 .t-button{
-    width: 30px;
-    height: 30px;
+    width: 28.5px;
+    height: 28.5px;
     border-radius: 50%;
-    background-color: #B25675;
+    background-color: #87B256;
     position: absolute;
     cursor: pointer;
 }
 
 .t-button:hover {
-    background-color: #B25675;
+    background-color: #56B281;
+}
+
+
+@media screen  and (max-width: 480px) {
+    .t {
+        border: 1.5px solid black;
+    }
 }

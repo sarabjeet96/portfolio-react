@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./toggle.css";
-import Sun from "../../img/sun.png";
+import Sun from "../../img/sun1.png";
 import Moon from "../../img/moon.png";
 import { ThemeContext } from "../../context";
 
@@ -17,7 +17,7 @@ const Toggle = () => {
       <div
         className="t-button"
         onClick={handleClick}
-        style={{ left: theme.state.darkMode ? 0 : 25 }}
+        style={{ left: theme.state.darkMode ? 0 : 26.5 }}
       ></div>
     </div>
   );

@@ -13,6 +13,7 @@
 .c-wrapper {
   padding: 50px;
   display: flex;
+  margin-top: 50px;
 }
 
 .c-left {
@@ -28,8 +29,9 @@
 }
 
 .c-title {
-  font-size: 60px;
-  width: 80%;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .c-info-item {
@@ -44,6 +46,11 @@
   width: 30px;
   height: 30px;
   margin-right: 20px;
+}
+
+.btn ,.btn-dark {
+  display: block;
+  overflow: hidden;
 }
 
 .c-desc {
@@ -65,10 +72,13 @@ input {
 }
 
 textarea {
-  width: 100%;
+  width: 80%;
   margin: 10px 0px;
+  height: 35%;
   font-size: 14px;
   padding-left: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
 }
 
 @media screen  and (max-width: 480px) {
@@ -89,16 +99,27 @@ textarea {
   form {
     display: flex;
     margin-top: 0px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
   }
+  
   input {
-    width: 35%;
+    width: 38vh;
     height: 40px;
-    margin: 10px;
+    margin: 12px;
     margin-left: 0;
   }
-  button {
-    margin-top: 10px;
+
+  textarea {
+    width: 45vh;
+    height: 80%;
+    margin-left: 0;
+  }
+
+  .btn, .btn-dark {
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }

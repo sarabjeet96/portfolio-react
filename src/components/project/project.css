@@ -2,14 +2,14 @@
     width: 30%;
     height: 40vh;
     margin: 20px 10px;
-    border: 2px solid rgb(243, 242, 242);
+    border: 2px solid #A3E4DB;
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
 }
 
 .p-browser {
     height: 20px;
-    background-color: rgb(243, 242, 242);
+    background-color: #A3E4DB;
     display: flex;
     align-items: center;
     position: sticky;
@@ -22,7 +22,7 @@
     margin: 3px;
     border-radius: 50%;
     margin-left: 5px;
-    background-color: #ff6666;
+    background-color: #D82148;
 }
 
 .p-img {
@@ -36,7 +36,8 @@
 
 @media screen  and (max-width: 480px) {
     .p {
-        width: 40%;
-        height: 20vh;
+        width: 65%;
+        height: 30vh;
     }
+
   }
