@@ -18,21 +18,16 @@
   height: 45px;
 }
 
-.git {
-  width: 38px;
-  height: 38px;
-}
-
 @media screen and (max-width: 480px) {
   .f-info {
     margin-top: 35vh;
     width: 100%;
+    column-gap: 50px;
   }
   .f-icon {
     width: 33px;
     height: 33px;
   }
-
 
   .f-icon:hover {
     width: 40px;

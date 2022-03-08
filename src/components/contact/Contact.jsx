@@ -59,10 +59,11 @@ const Contact = () => {
             >
               <iframe
                 title="home location"
-                src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d116778.44079317349!2d78.00078456664333!3d30.308137724656344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1646749061892!5m2!1sen!2sin" 
                 frameBorder="0"
                 style={{ border: 0 }}
                 allowFullScreen
+                loading="lazy"
               ></iframe>
             </div>
           </div>
