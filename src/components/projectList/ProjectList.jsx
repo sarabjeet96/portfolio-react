@@ -24,7 +24,7 @@ const ProjectList = () => {
           <Project key={item.id} img={item.img} link={item.link} />
         ))}
       </div>
-          {button}
+          <a href="https://github.com/sarabjeet96">{button}</a>
     </div>
   );
 };

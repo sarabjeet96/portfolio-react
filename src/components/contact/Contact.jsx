@@ -1,7 +1,5 @@
 import "./contact.css";
 import { useContext } from "react";
-// import Email from "../../img/email.png";
-// import Address from "../../img/address.png";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ThemeContext } from "../../context";
@@ -10,11 +8,11 @@ const Contact = () => {
   const formRef = useRef();
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
-    let submitBtn;
-  if(darkMode) {
+  let submitBtn;
+  if (darkMode) {
     submitBtn = <button className="btn-dark">Submit</button>;
-  }else {
-    submitBtn = <button className="btn">Submit</button>;  
+  } else {
+    submitBtn = <button className="btn">Submit</button>;
   }
   const [done, setDone] = useState(false);
   const handleSubmit = (e) => {
@@ -38,30 +36,35 @@ const Contact = () => {
   };
 
   let styles;
-  if(darkMode){
+  if (darkMode) {
     styles = {
-      borderRadius: '6px',
-      backgroundColor: '#333',
-      color: 'wheat',
-      border: 'transparent',
-    }
+      borderRadius: "6px",
+      backgroundColor: "#333",
+      color: "wheat",
+      border: "transparent",
+    };
   }
 
   return (
     <div className="c">
-      <div className="c-bg"></div>
       <h1 className="c-title">Get In Touch</h1>
       <div className="c-wrapper">
         <div className="c-left">
-          <div className="c-info">
-            {/* <div className="c-info-item">
-              <img className="c-icon" src={Email} alt="" />
-              sarabjeetsinghsomnal@gmail.com
+          <div className="c-map">
+            {/* Google map */}
+            <div
+              id="map-container-google-11"
+              className="map-container"
+              style={{ height: 420 }}
+            >
+              <iframe
+                title="home location"
+                src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameBorder="0"
+                style={{ border: 0 }}
+                allowFullScreen
+              ></iframe>
             </div>
-            <div className="c-info-item">
-              <img className="c-icon" src={Address} alt="" />
-              Dehradun, India
-            </div> */}
           </div>
         </div>
         <div className="c-right">
@@ -94,7 +97,7 @@ const Contact = () => {
               name="message"
               required
             />
-              {submitBtn}
+            {submitBtn}
             {done && "Thank you..."}
           </form>
         </div>

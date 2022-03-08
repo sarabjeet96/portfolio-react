@@ -3,13 +3,6 @@
   position: relative;
 }
 
-.c-bg {
-  width: 20px;
-  height: 100%;
-  background-color: #59b256;
-  position: absolute;
-}
-
 .c-wrapper {
   padding: 50px;
   display: flex;
@@ -18,6 +11,10 @@
 
 .c-left {
   flex: 1;
+}
+
+.c-map {
+  margin-bottom: 60px;
 }
 
 .c-right {
@@ -48,7 +45,8 @@
   margin-right: 20px;
 }
 
-.btn ,.btn-dark {
+.btn,
+.btn-dark {
   display: block;
   overflow: hidden;
 }
@@ -81,10 +79,30 @@ textarea {
   border: 1px solid #333;
 }
 
-@media screen  and (max-width: 480px) {
+.map-container {
+  overflow: hidden;
+  position: relative;
+  height: 320px;
+  width: 65%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media screen and (max-width: 480px) {
   .c-wrapper {
     flex-direction: column;
-    padding: 0px 50px;
+    padding: 0px 40px;
   }
   .c-title {
     font-size: 30px;
@@ -103,7 +121,7 @@ textarea {
     justify-content: center;
     align-items: baseline;
   }
-  
+
   input {
     width: 80%;
     height: 40px;
@@ -117,9 +135,22 @@ textarea {
     margin-left: 0;
   }
 
-  .btn, .btn-dark {
+  .btn,
+  .btn-dark {
     margin-left: auto;
     margin-right: auto;
+  }
+  .map-container {
+    width: auto;
+    max-height: 260px;
+    margin-bottom: 20px;
+  }
+  .c {
+    margin-top: 18px;
+  }
+  .c-title {
+    font-size: 50px;
+    font-weight: 600;
   }
 
 }

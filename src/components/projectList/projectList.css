@@ -56,6 +56,10 @@
     color: #5902EC;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media screen  and (max-width: 480px) {
     .pl {
       padding: 10px;

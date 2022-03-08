@@ -4,7 +4,8 @@ import About from "./components/about/About";
 import ProjectList from "./components/projectList/ProjectList";
 import Contact from "./components/contact/Contact";
 import { ThemeContext } from "./context.js";
-import Toggle from './components/toggle/Toggle'
+import Toggle from './components/toggle/Toggle';
+import Footer from './components/footer/Footer';
 
 const App = () => {
   const theme = useContext(ThemeContext);
@@ -21,6 +22,7 @@ const App = () => {
       <ProjectList />
       <Contact />
       <Toggle />
+      <Footer />
     </div>
   );
 };
